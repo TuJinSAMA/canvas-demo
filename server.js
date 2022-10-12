@@ -10,11 +10,7 @@ const template = `
       <title>Canvas Demo</title>
     </head>
     <body>
-      <div class="box">
-        <canvas id="canvas" width="600" height="600">
-          当前浏览器不支持canvas元素, 请升级或更换浏览器!
-        </canvas>
-      </div>
+      <div id="root"></div>
       <script src="bundle.js"></script>
     </body>
   </html>

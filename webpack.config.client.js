@@ -17,6 +17,15 @@ module.exports = {
         }
       },
       {
+        test: /\.jsx$/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-react"]
+          }
+        }
+      },
+      {
         test: /\.styl$/,
         exclude: /node_modules/,
         use: [
@@ -26,5 +35,8 @@ module.exports = {
         ]
       }
     ]
+  },
+  resolve: {
+    extensions: [".js", ".jsx"]
   }
 }
